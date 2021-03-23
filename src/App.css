@@ -1,0 +1,52 @@
+:root{
+  --mainColor : #2a2a80;
+  --secondColor : #009ffd;
+  --white : #f2f2f2;
+  --dark : #232528;
+  --yellow:#ffa400;
+}
+
+body{
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+}
+
+.text-title{
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color:var(--second-color)
+}
+
+.text-blue{
+  color : var(--mainColor);
+}
+
+.text-pright{
+  color:var(--secondColor) !important
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-num{
+  margin: 0 20px;
+}
+
+.remove{
+  color: var(--yellow);
+  font-size: 1.5rem;
+  transition: all .5s ease-in-out;
+  line-height: 1;
+}
+
+.remove:hover{
+  color:red
+}
+.btn-info{
+  line-height: 1 !important;
+}
+.notselect {
+  cursor: not-allowed;
+}

@@ -87,8 +87,7 @@ const ProductConsumer = DataContext.Consumer;
 
      decrease = (id) => {
         let cartItem = [...this.state.Cart];
-        const item = cartItem.find(item => item.id == id)
-         
+        const item = cartItem.find(item => item.id == id);
          if(item.count >= 2){
             item.count = item.count - 1;
             item.total = item.total - item.price;

@@ -17,8 +17,8 @@ class Model extends Component {
                     <ModelContainer >
                        <div className="container">
                         <div className="row">
-                         <div id="model" className="col-9 mx-auto col-md-6 col-lg-4 text-center py-3">
-                              <img src={img} />
+                         <div id="model" className="col-9 mx-auto col-md-6 col-lg-4 text-center py-4">
+                              <img src={img} style={{width:"200px" , height:"200px"}}/>
                               <h5 className="text-title">{title}</h5>
                               <p className="text-muted">
                                   <strong>

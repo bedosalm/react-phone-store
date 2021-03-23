@@ -21,9 +21,9 @@ class Navbar extends Component {
                         </Link>
                     </li>
                 </ul>
-               <Link to="/cart" className="ml-auto">
-               <ButtonContainer>
-                  <span className="mr-2">
+               <Link to="/cart" className="ml-auto text-white">
+               <ButtonContainer  className="text-white">
+                  <span className="mr-2 icon">
                   <AiOutlineShoppingCart />
                   </span>
                    my cart

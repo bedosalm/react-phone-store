@@ -25,6 +25,11 @@ body{
   color:var(--secondColor) !important
 }
 
+.text-white{
+  color:var(--white) !important
+}
+
+
 .item{
   display: flex;
   justify-content: space-between;
@@ -49,4 +54,7 @@ body{
 }
 .notselect {
   cursor: not-allowed;
+}
+.icon{
+  line-height:1.5rem !important
 }

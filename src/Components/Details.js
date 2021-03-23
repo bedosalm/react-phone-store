@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {ProductConsumer} from "../Productcontext";
 import {Link} from "react-router-dom";
 import { ButtonContainer } from "./Button";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+
 
 class Details extends Component {
     render() {
@@ -43,11 +45,9 @@ class Details extends Component {
                       </ButtonContainer>
                       </Link>
                       <ButtonContainer cart disabled={inCart ? true : false}
-                      onClick={()=> {
-                       console.log(value.addToCart())
-                      }}
+                      onClick={()=> value.addToCart(id)}
                       >
-                        {inCart ? "in Cart" : "add to Cart"}
+                        {inCart ? "in Cart" : <AiOutlineShoppingCart /> }
                       </ButtonContainer>
                      </div>
                  </div>

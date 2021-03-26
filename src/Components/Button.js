@@ -26,3 +26,25 @@ border-raduis:0.5rem;
 }
 
 `
+
+
+export const ButtonContainerdel = styled.button`
+background: transparent;
+font-size: 1.2rem;
+padding: 3px 5px;
+border-color:red;
+color:red;
+margin: 0.3rem;
+line-height: 23px;
+text-transform: capitalize;
+curosr : pointer;
+transition:all .5s ease-in-out;
+border-raduis:0.5rem;
+&:hover{
+    background-color:red;
+    color:var(--white);
+}
+&:focus{
+    outline:none
+}
+`

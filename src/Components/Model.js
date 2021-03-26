@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import style from "styled-components";
 import {ProductConsumer} from "../Productcontext";
 import {Link} from "react-router-dom";
-import {ButtonContainer} from "./Button"
+import {ButtonContainer,ButtonContainerdel} from "./Button"
 class Model extends Component {
     render() {
      return (
         <ProductConsumer>
         {value => {
-            const {openModel,closeModel} = value;
-            const {img , title , price} = value.myModel
+            const {openModel,closeModel,removeItem} = value;
+            const {id,img , title , price} = value.myModel
             if(!openModel){
                 return null
             } else{
@@ -35,6 +35,11 @@ class Model extends Component {
                                   to cart
                               </ButtonContainer>
                               </Link>
+                            <Link  to="/">
+                            <ButtonContainerdel delitem onClick={()=> removeItem(id)}>
+                                remove Item
+                            </ButtonContainerdel>
+                            </Link>
                          </div>
                         </div>
                        </div>

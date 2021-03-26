@@ -97,6 +97,7 @@ const ProductConsumer = DataContext.Consumer;
                 this.addTotal()
             })
          }else {
+
              return null
          }
      }
@@ -110,11 +111,17 @@ const ProductConsumer = DataContext.Consumer;
         item.inCart = false;
         item.count = 0;
 
-        this.setState({
-            Cart : myFilter,
-            Products : myProducts
+        this.setState(() => {
+            return {Cart : myFilter,Products : myProducts ,openModel : false}
+        
+        } , () => {
+            this.addTotal()
         })
 
+     }
+
+     removeModel = () => {
+         
      }
      
      addTotal = () => {
